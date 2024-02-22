@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HTML Masters">
+    <title>Resolucion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="border container p-2 bg-primary bg-gradient">
+        <h2> INGRESO DE RESOLUCION</h2>
+    </div>
+    <div class="container">
+        <div class="rounded p-1 br-3">
+            <div class="border rounded p-3 bg-light br-3 mb-1">
+                <form action="" class="row">
+                    <!--Primer contenedor-->
+                    <div class="border rounded p-3 bg-danger br-3 mb-1">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-md-3 col-12 p-1">
+                                        <label for="FechaNotInput" class="form-label">Fecha</label>
+                                        <input type="date" class="form-control" id="FechaNotInput" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Segundo contenedor-->
+                    <div class="border rounded p-3 bg-light br-3 mb-1">
+                        <div class="row">
+                            <div class="form-label">Tipo de Resolución</div>
+                            <div class="d-flex flex-md-row flex-wrap flex-sm-column mb-2">
+                                <div class="col-md-4 col-12">
+                                    <div>
+                                        <input type="radio" value="0" name="opcionRes" id="opcionResSi">
+                                        <label for="opcionResSi" class="form_label">Directora</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div>
+                                        <input type="radio" value="1" name="opcionRes" id="opcionResSi">
+                                        <label for="opcionResSi" class="form_label">Administrativa</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-3 col-12">
+                                    <label class="form-label" for="resAsunto">Asunto</label>
+                                </div>
+                                <div class="col-md-9 col-12">
+                                    <input type="text" class="form-control" id="resAsunto">
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-md-3 col-6">
+                                    <label class="form-label" for="resInteresado">Interesado</label>
+                                </div>
+                                <div class="col-md-9 col-6 d-md-flex justify-content-md-end">
+                                    <button class="btn btn-secondary btn-sm mb-2" id="agregarInteresados">Agregar Interesado</button>
+                                </div>
+                                <div class="col-12" id="intDinamico">
+
+                                </div>
+                                <!-- <div class="col-md-9 col-12">
+                                    <input type="text" class="form-control" id="resInteresado">
+                                </div> -->
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-md-3 col-12">
+                                    <label class="form-label" for="resFolios">Folios</label>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <input type="number" class="form-control" id="resFolios">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--Tercer Contenedor-->
+                    <div class="border rounded p-3 bg-light br-3 mb-1">
+                        <div class="row">
+                        </div>
+                    </div>
+
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="col-md-3 col-6">
+        <label class="form-label" for="resInteresado">Interesado</label>
+    </div>
+    <div class="col-md-9 col-6 d-md-flex justify-content-md-end">
+        <button class="btn btn-secondary btn-sm mb-2" id="agregarInteresados">Agregar Interesado</button>
+    </div>
+    <div id="intDinamico">
+
+    </div> -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</body>
+
+
+</body>
+
+</html>
