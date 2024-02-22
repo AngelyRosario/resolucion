@@ -5,7 +5,7 @@ let contador = 1;
 
 btnAgregar.addEventListener('click', e=> {
     let cadaDiv = document.createElement('div');
-    cadaDiv.innerHTML = `<label class="form-label">Interesado N° ${contador++}</label> - <input class="form-control" name="nombre[]" placeholder="Escriba el Nombre"></input><button class="col-md-3 col-12 btn btn-secondary btn-sm mb-2" onclick="eliminar(this)">Eliminar</button>`;
+    cadaDiv.innerHTML = `<div class="d-flex flex-md-col flex-wrap flex-sm-col mb-2"><label class="col-md-3 col-12 form-label">Interesado N° ${contador++}</label> - <input class="col-md-6 col-12 form-control" name="nombre[]" placeholder="Escriba el Nombre"></input><button class="col-md-3 col-12 btn btn-secondary btn-sm mb-2" onclick="eliminar(this)">Eliminar</button></div>`;
     contenedor.appendChild(cadaDiv);
 })
 
