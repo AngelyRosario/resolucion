@@ -1,9 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .container{
     border-color: black;
     background-color: rgb(255, 255, 255);
-    width:80%;
-    max-width: 1000px;
     margin: 0 auto;
     overflow:hidden;
+}
+
+.content_article{
+    margin-top: 50px;
+    justify-content: center;
+    flex-direction: row;
+}
+.text_inicial1 {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.text_inicial1 strong {
+    display: block; /* Hace que el elemento strong sea bloque */
+    margin: 0 auto; /* Centra el elemento strong horizontalmente */
+    width: fit-content; /* Establece el ancho del elemento como el ancho del contenido */
 }

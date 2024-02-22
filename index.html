@@ -11,78 +11,101 @@
 </head>
 
 <body>
-    <div class="border container p-2 bg-primary bg-gradient">
-        <h2> INGRESO DE RESOLUCION</h2>
-    </div>
     <div class="container">
         <div class="rounded p-1 br-3">
             <div class="border rounded p-3 bg-light br-3 mb-1">
                 <form action="" class="row">
+                    <h5 class="text_inicial1"><strong>INGRESO DE RESOLUCION</strong></h5>
                     <!--Primer contenedor-->
-                    <div class="border rounded p-3 bg-danger br-3 mb-1">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="d-flex flex-wrap">
-                                    <div class="col-md-3 col-12 p-1">
-                                        <label for="FechaNotInput" class="form-label">Fecha</label>
-                                        <input type="date" class="form-control" id="FechaNotInput" placeholder="">
-                                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap">
+                                <div class="col-md-3 col-12 p-3">
+                                    <label for="FechaNotInput" class="form-label"><strong>Fecha</strong></label>
+                                    <input type="date" class="form-control" id="FechaNotInput" placeholder="">
+                                </div>
+                                <div class="col-md-5 col-12 p-3">
+                                    <label for="nexpediente" class="form-label"><strong>N° de
+                                            Expediente</strong></label>
+                                    <input type="text" class="form-control" id="nexpediente"
+                                        placeholder="Escriba el N° de expediente">
+                                </div>
+                                <div class="col-md-4 col-12 p-3">
+                                    <label for="nresolucion" class="form-label"><strong>N° de
+                                            Resolucion</strong></label>
+                                    <input type="text" class="form-control" id="nresolucion"
+                                        placeholder="Escriba el N° de resolucion">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--Segundo contenedor-->
-                    <div class="border rounded p-3 bg-light br-3 mb-1">
-                        <div class="row">
-                            <div class="form-label">Tipo de Resolución</div>
-                            <div class="d-flex flex-md-row flex-wrap flex-sm-column mb-2">
-                                <div class="col-md-4 col-12">
-                                    <div>
-                                        <input type="radio" value="0" name="opcionRes" id="opcionResSi">
-                                        <label for="opcionResSi" class="form_label">Directora</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-12">
-                                    <div>
-                                        <input type="radio" value="1" name="opcionRes" id="opcionResSi">
-                                        <label for="opcionResSi" class="form_label">Administrativa</label>
-                                    </div>
+                    <div class="row">
+                        <div class="form-label">Tipo de Resolución</div>
+                        <div class="d-flex flex-md-row flex-wrap flex-sm-column mb-2">
+                            <div class="col-md-4 col-12">
+                                <div>
+                                    <input type="radio" value="0" name="opcionRes" id="opcionResSi">
+                                    <label for="opcionResSi" class="form_label">Directora</label>
                                 </div>
                             </div>
-                            <div class="row mb-2">
-                                <div class="col-md-3 col-12">
-                                    <label class="form-label" for="resAsunto">Asunto</label>
-                                </div>
-                                <div class="col-md-9 col-12">
-                                    <input type="text" class="form-control" id="resAsunto">
+                            <div class="col-md-4 col-12">
+                                <div>
+                                    <input type="radio" value="1" name="opcionRes" id="opcionResSi">
+                                    <label for="opcionResSi" class="form_label">Administrativa</label>
                                 </div>
                             </div>
-                            <div class="row mb-1">
-                                <div class="col-md-3 col-6">
-                                    <label class="form-label" for="resInteresado">Interesado</label>
-                                </div>
-                                <!-- <div class="col-md-9 col-6 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-secondary btn-sm mb-2" id="agregarInteresados">Agregar Interesado</button>
-                                </div> -->
-                            </div>
-                            <!-- <div class="d-flex flex-md-row flex-wrap flex-sm-column mb-2" id="intDinamico">
-                                <label class="form-label">Interesado N° ${contador++}</label>
-                                <input class="form-control" name="nombre[]" placeholder="Escriba el Nombre">
-                            </div> -->
-                            <div class="row mb-1">
-                                <div class="col-md-3 col-12">
-                                    <label class="form-label" for="resFolios">Folios</label>
-                                </div>
-                                <div class="col-md-3 col-6">
-                                    <input type="number" class="form-control" id="resFolios">
-                                </div>
-                            </div>
-                            
                         </div>
+                        <div class="row mb-2">
+                            <div class="col-md-3 col-12">
+                                <label class="form-label" for="resAsunto">Asunto</label>
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <input type="text" class="form-control" id="resAsunto">
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-md-3 col-6">
+                                <label class="form-label" for="resInteresado">Interesado</label>
+                            </div>
+                            <!-- <div class="col-md-9 col-6 d-md-flex justify-content-md-end">
+                                <button class="btn btn-secondary btn-sm mb-2" id="agregarInteresados">Agregar Interesado</button>
+                            </div> -->
+                        </div>
+                        <!-- <div class="d-flex flex-md-row flex-wrap flex-sm-column mb-2" id="intDinamico">
+                            <label class="form-label">Interesado N° ${contador++}</label>
+                            <input class="form-control" name="nombre[]" placeholder="Escriba el Nombre">
+                        </div> -->
+                        <div class="row mb-1">
+                            <div class="col-md-3 col-12">
+                                <label class="form-label" for="resFolios">Folios</label>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <input type="number" class="form-control" id="resFolios">
+                            </div>
+                        </div>
+                        
                     </div>
                     <!--Tercer Contenedor-->
-                    <div class="border rounded p-3 bg-light br-3 mb-1">
-                        
+                    <div class="centrado ">
+                        <h5 class="text_inicial"><strong>Emitido por:</strong></h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap">
+                                <div class="col-md-2 col-12 p-3">
+                                    <h7> <strong>Responsable</strong></h7>
+                                </div>
+                                <div class="col-md-5 col-12 p-3">
+                                    <label for="responsable" class="form-label">Nombres :</label>
+                                    <input type="text" class="form-control" id="responsable" placeholder="Nombres">
+                                </div>
+                                <div class="col-md-5 col-12 p-3">
+                                    <label for="responsable" class="form-label">Apellidos :</label>
+                                    <input type="text" class="form-control" id="responsable" placeholder="Apellidos">
+                                </div>
+                            </div>
+                        </div>
                     </div>
             </div>
             </form>
